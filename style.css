@@ -1,0 +1,251 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 全域設定 */
+*,*:after,*:before{
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    padding: 10px 10px;
+}
+a:hover {
+    font-size: 36px;
+    /* background: peru; */
+}
+
+img {
+    max-width: 80%;
+    /* height: 500px; */
+    height: auto;
+}
+
+h1 {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+
+/* 管理類別示意圖 */
+.main {
+    max-width: 1440px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    position: relative;
+}
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background: orange;
+    width: 20%;
+    margin: 0 5px;
+    border: 1px solid #000;
+}
+
+.class-items {
+    width: 60%;
+    border: 2px solid peru;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px auto;
+}
+.class-item {
+    font-size: 28px;
+    min-width: 40px;
+    font-weight: bold;
+    margin: 16px 32px 16px;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 新增類別示意圖 */
+.checkbox {
+    /* width: 100px; */
+    /* padding: 0 20px; */
+    padding-top: 10px;
+}
+
+.content {
+    margin: 8px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    font-size: 2rem;
+    display: block;
+    margin: 16px auto;
+}
+
+/* 管理跑馬燈 */
+.event-img {
+    max-width: 60%;
+    height: 400px;
+    /* height: auto; */
+    background: rgb(236, 232, 232);
+    border-radius: 40px;
+    margin: 0 auto;
+    border: 2px solid blue;
+}
+
+
+.swiper {
+    max-width: auto;
+    height: auto;
+}
+
+.swiper-weapper {
+    display: flex;
+    justify-content: center;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 16px 10px;
+    background: rgb(185, 182, 182);
+}
+
+.page:hover {
+    background: red;
+    width: 22px;
+    height: 22px;
+}
+
+/* 新增跑馬燈 */
+label {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+input {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+/* 管理活動 */
+.Event-items {
+    width: 60%;
+    border: 2px solid peru;
+    margin: 16px auto;
+}
+
+.Event-item {
+    font-size: 32px;
+    margin: 16px 0;
+    display: flex;
+}
+
+.Event-number {
+    width: 200px;
+    border-bottom: 1px solid #000;
+}
+
+/* 審核活動示意圖 */
+.lists {
+    margin: 0 auto;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid rgb(112, 112, 112);
+    background: rgb(240, 238, 238);
+    border-radius: 17%;
+}
+
+.list {
+    width: 80%;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    /* margin: 32px 0px 16px 16px; */
+    margin: 32px auto;
+    padding: 0px 32px;
+    font-size: 24px;
+}
+
+.check {
+    margin: 16px auto;
+}
